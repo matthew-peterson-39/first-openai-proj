@@ -22,6 +22,12 @@ VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=sukumo2
 Place your API key inside of the myKey() function, or setup your enviornment variables to be used. Pass the API Key to the client as api_key argument:
 
 ```
+client = OpenAI(api_key=myKey())
+```
+
+or
+
+```
 client = OpenAI(api_key=$YOUR_API_KEY)
 ```
 
