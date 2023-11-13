@@ -24,6 +24,9 @@ def writeJokeToFile(joke):
         file.write(joke + '\n')
 
 def checkDirectoryExists(directory):
+    """
+    Creates a directory if none exists.
+    """
     #parents=True -- create any parent directories that are necessary to make the specified path.
     #exist_ok=True -- does not throw error if file exists (ie-> FileExistsError)
     Path(directory).mkdir(parents=True, exist_ok=True)
